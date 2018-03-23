@@ -76,12 +76,14 @@ namespace WindowsFormsApplication1
 
             ComboBox_peopleKind.Items.Add("嫌疑人");
             ComboBox_peopleKind.Items.Add("证人");
-
+            
             comboBox_caseReason.Items.Add("口头传唤");
             comboBox_caseReason.Items.Add("投案自首");
             comboBox_caseReason.Items.Add("群众扭送");
             comboBox_caseReason.Items.Add("书面传唤");
             comboBox_caseReason.Items.Add("不显示");
+            
+            
             textBox_startTime.Width = 200;
             textBox_startTime.Text = DateTime.Now.ToString();
             textBox_endTime.Width = 200;
@@ -111,10 +113,6 @@ namespace WindowsFormsApplication1
              }
             catch { } 
         }
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -122,56 +120,10 @@ namespace WindowsFormsApplication1
             //this.BackColor = Color.Blue;
         }
 
-        private void splitContainer1_Panel1_Paint(object sender, PaintEventArgs e)
-        {
-            
-           
-        }
 
         private void treeView1_AfterSelect(object sender, TreeViewEventArgs e)
         {
             //treeView1.ShowLines = true;
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Combox_recordKind_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ComboBox_peopleKind_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-
-        }
-
-        private void textBox_CaseNumber_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox_caseReason_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_startTime_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox_endTime_TextChanged(object sender, EventArgs e)
-        {
 
         }
 
@@ -203,11 +155,6 @@ namespace WindowsFormsApplication1
             btnDel.Click += new EventHandler(delFileControl);
             flowLayoutPanel1.Controls.Add(btnDel);
              */
-        }
-
-        private void button_submit_Click(object sender, EventArgs e)
-        {
-
         }
 
 

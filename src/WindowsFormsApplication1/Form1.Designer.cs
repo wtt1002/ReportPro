@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.button_submit = new System.Windows.Forms.Button();
             this.button_addExaminer = new System.Windows.Forms.Button();
             this.textBox_caseLocation = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -48,21 +49,24 @@
             this.ComboBox_peopleKind = new System.Windows.Forms.ComboBox();
             this.人员类型 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.button_submit = new System.Windows.Forms.Button();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.splitter1 = new System.Windows.Forms.Splitter();
+            this.splitter2 = new System.Windows.Forms.Splitter();
+            this.splitter3 = new System.Windows.Forms.Splitter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitContainer1
             // 
-            this.splitContainer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.splitContainer1.Location = new System.Drawing.Point(12, 28);
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -87,10 +91,22 @@
             this.splitContainer1.Panel1.Controls.Add(this.ComboBox_peopleKind);
             this.splitContainer1.Panel1.Controls.Add(this.人员类型);
             this.splitContainer1.Panel1.Controls.Add(this.label1);
-            this.splitContainer1.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel1_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(742, 409);
-            this.splitContainer1.SplitterDistance = 514;
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.richTextBox2);
+            this.splitContainer1.Size = new System.Drawing.Size(754, 424);
+            this.splitContainer1.SplitterDistance = 371;
             this.splitContainer1.TabIndex = 2;
+            // 
+            // button_submit
+            // 
+            this.button_submit.Location = new System.Drawing.Point(190, 324);
+            this.button_submit.Name = "button_submit";
+            this.button_submit.Size = new System.Drawing.Size(75, 23);
+            this.button_submit.TabIndex = 20;
+            this.button_submit.Text = "提交";
+            this.button_submit.UseVisualStyleBackColor = true;
             // 
             // button_addExaminer
             // 
@@ -157,7 +173,6 @@
             this.textBox_endTime.Name = "textBox_endTime";
             this.textBox_endTime.Size = new System.Drawing.Size(100, 21);
             this.textBox_endTime.TabIndex = 12;
-            this.textBox_endTime.TextChanged += new System.EventHandler(this.textBox_endTime_TextChanged);
             // 
             // textBox2
             // 
@@ -181,7 +196,6 @@
             this.textBox_startTime.Name = "textBox_startTime";
             this.textBox_startTime.Size = new System.Drawing.Size(100, 21);
             this.textBox_startTime.TabIndex = 9;
-            this.textBox_startTime.TextChanged += new System.EventHandler(this.textBox_startTime_TextChanged);
             // 
             // label4
             // 
@@ -199,7 +213,6 @@
             this.comboBox_caseReason.Name = "comboBox_caseReason";
             this.comboBox_caseReason.Size = new System.Drawing.Size(80, 20);
             this.comboBox_caseReason.TabIndex = 7;
-            this.comboBox_caseReason.SelectedIndexChanged += new System.EventHandler(this.comboBox_caseReason_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -216,7 +229,6 @@
             this.textBox_CaseNumber.Name = "textBox_CaseNumber";
             this.textBox_CaseNumber.Size = new System.Drawing.Size(100, 21);
             this.textBox_CaseNumber.TabIndex = 5;
-            this.textBox_CaseNumber.TextChanged += new System.EventHandler(this.textBox_CaseNumber_TextChanged);
             // 
             // label2
             // 
@@ -234,7 +246,6 @@
             this.ComboBox_peopleKind.Name = "ComboBox_peopleKind";
             this.ComboBox_peopleKind.Size = new System.Drawing.Size(80, 20);
             this.ComboBox_peopleKind.TabIndex = 3;
-            this.ComboBox_peopleKind.SelectedIndexChanged += new System.EventHandler(this.ComboBox_peopleKind_SelectedIndexChanged);
             // 
             // 人员类型
             // 
@@ -253,69 +264,113 @@
             this.label1.Size = new System.Drawing.Size(53, 12);
             this.label1.TabIndex = 0;
             this.label1.Text = "人员类型";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
-            // menuStrip1
+            // richTextBox2
             // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.toolStripMenuItem2});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(766, 25);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
+            this.richTextBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox2.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(379, 424);
+            this.richTextBox2.TabIndex = 0;
+            this.richTextBox2.Text = "hello   pppp";
             // 
-            // toolStripMenuItem1
+            // panel1
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(27, 21);
-            this.toolStripMenuItem1.Text = "1";
+            this.panel1.Controls.Add(this.button3);
+            this.panel1.Controls.Add(this.button2);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.splitter3);
+            this.panel1.Controls.Add(this.splitter2);
+            this.panel1.Controls.Add(this.splitter1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 363);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(754, 61);
+            this.panel1.TabIndex = 21;
             // 
-            // toolStripMenuItem2
+            // splitter1
             // 
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(27, 21);
-            this.toolStripMenuItem2.Text = "2";
+            this.splitter1.Location = new System.Drawing.Point(0, 0);
+            this.splitter1.Name = "splitter1";
+            this.splitter1.Size = new System.Drawing.Size(240, 61);
+            this.splitter1.TabIndex = 0;
+            this.splitter1.TabStop = false;
             // 
-            // button_submit
+            // splitter2
             // 
-            this.button_submit.Location = new System.Drawing.Point(181, 368);
-            this.button_submit.Name = "button_submit";
-            this.button_submit.Size = new System.Drawing.Size(75, 23);
-            this.button_submit.TabIndex = 20;
-            this.button_submit.Text = "提交";
-            this.button_submit.UseVisualStyleBackColor = true;
-            this.button_submit.Click += new System.EventHandler(this.button_submit_Click);
+            this.splitter2.Location = new System.Drawing.Point(240, 0);
+            this.splitter2.Name = "splitter2";
+            this.splitter2.Size = new System.Drawing.Size(261, 61);
+            this.splitter2.TabIndex = 1;
+            this.splitter2.TabStop = false;
+            // 
+            // splitter3
+            // 
+            this.splitter3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.splitter3.Location = new System.Drawing.Point(499, 0);
+            this.splitter3.Name = "splitter3";
+            this.splitter3.Size = new System.Drawing.Size(255, 61);
+            this.splitter3.TabIndex = 2;
+            this.splitter3.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.Location = new System.Drawing.Point(77, 17);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.Location = new System.Drawing.Point(338, 17);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 4;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.button3.Location = new System.Drawing.Point(596, 17);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 5;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // Main_Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 449);
+            this.ClientSize = new System.Drawing.Size(754, 424);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.splitContainer1);
-            this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Main_Form";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Main_Form_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
+            this.splitContainer1.Panel2.ResumeLayout(false);
             this.splitContainer1.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
         private System.Windows.Forms.ComboBox ComboBox_peopleKind;
         private System.Windows.Forms.Label 人员类型;
         private System.Windows.Forms.TextBox textBox_CaseNumber;
@@ -336,6 +391,14 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button_addExaminer;
         private System.Windows.Forms.Button button_submit;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.Splitter splitter3;
+        private System.Windows.Forms.Splitter splitter2;
+        private System.Windows.Forms.Splitter splitter1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
 
     }
 }
